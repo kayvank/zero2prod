@@ -6,6 +6,7 @@ A toy application based on [Zero To Production In Rust](https://www.zero2prod.co
 
 ``` sh
 nix develop
+docker-compose up -d
 cargo build
 cargo test
 cargo run
