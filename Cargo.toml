@@ -12,6 +12,9 @@ path = "src/main.rs"
 name = "zero2prod"
 
 [dependencies]
+validator = "0.14"
+claim = "0.5"
+unicode-segmentation = "1"
 actix-web = "4.4.1"
 serde-aux = "3"
 tracing-actix-web = "0.5"

@@ -59,6 +59,7 @@
             alias ls=eza
             alias find=fd
             echo "rust-dev" | cowsay
+
             export RUST_SRC_PATH="${toolchain}/lib/rustlib/src/rust/library"
             export CARGO_HOME="$(pwd)/.cargo"
             export PATH="$CARGO_HOME/bin:$PATH"
@@ -67,6 +68,8 @@
             export POSTGRES_USER='postgres'
             export POSTGRES_PASSWORD='postgres'
             export POSTGRES_DB='newsletter'
+            export APP_ENVIRONMENT=local
+
             cargo install --version 0.5.7 sqlx-cli --no-default-features --features postgres
             cargo install cargo-udeps
             cargo install bunyan

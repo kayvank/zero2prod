@@ -11,3 +11,9 @@ cargo build
 cargo test
 cargo run
 ```
+to run the build without database, use the sqlx offline mode:
+
+``` sh
+SQLX_OFFLINE=true cargo build
+```
+
